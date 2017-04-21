@@ -1,4 +1,4 @@
-# tangollama.github.io
+# alms.io
 My website
 
 ## To run locally
