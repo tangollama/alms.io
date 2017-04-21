@@ -1,43 +1,27 @@
-html {
-  background: $true_black url(/img/bg-2.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+body {
+min-height: 700px;
+width: 100%;
 }
-body{
-  @include sans;
-  color: $text_color;
-  font-size: 16px;
-  line-height: 1.5;
+body, p, h1, a {
+font-family: Ubuntu, sans-serif;
 }
-
-/* clearfix (now called group, via http://css-tricks.com/snippets/css/clear-fix/) */
-.group:before,
-.group:after { content:""; display:table; }
-.group:after { clear:both; }
-.group { zoom:1; /* For IE 6/7 (trigger hasLayout) */ }
-
-a {
-  font-weight: bold;
-  color: $white;
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: underline;
-    opacity: .8;
-  }
-  &:active,
-  &:focus { outline: none; }
+.wrap {
+margin-top: 200px;
+max-width: 960px;
+position: relative;
+text-align: center;
 }
-
-::-moz-selection {
-    background: rgba(51,51,51,.8);
-    color: #fff;
-    text-shadow: none;
+h1 {
+width: auto;
 }
-::selection {
-    background: rgba(51,51,51,.8);
-    color: #fff;
-    text-shadow: none;
+.wrap p {
+margin-top: -20px;
+font-size: 14px;
+}
+a:link, a:visited {
+text-decoration: none;
+color: #92d400;
+}
+@media (max-width: 649px) {
+	width: 320px
 }
